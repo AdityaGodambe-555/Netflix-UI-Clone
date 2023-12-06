@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ubox {
+    width: auto;
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    padding: 15px 40px;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.mainbox {
+    background-image: url("assets/images/bg_image.jpg");
+    background-repeat: no-repeat;
+    z-index: 0;
+    width: 100%;
+    height: 110%;
+    opacity: 0.22;
+    /* box-shadow: inset 15em 2em rgba(0, 0, 0, 0.5); */
+    box-shadow: inset 10em 1em 1000px #000000;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    background-position: right center;
+    
+}
+
+.but-u {
+    display: flex;
+    gap: 10px;
+    padding-top: 12px;
+    
+}
+
+.but-e {
+    font-size: large;
+    color: white;
+    background-color: black;
+    padding: 3px 9px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.but-s {
+    font-size: large;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    padding: 3px 9px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.but-e,.but-s,.bu-st:hover{
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    color: aliceblue;
+    margin-top: 170px;
+    padding-left: 135px;
+    padding-bottom: 120px;
+    font-size: 56px;
+    font-weight: 900;
+    width: 40vw;
+}
+
+.content div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content div:nth-child(3) {
+    color: rgb(167, 167, 167);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 55px;
+}
+
+.info {
+    margin-top: -41px;
+}
+
+.info .email {
+    font-size: 15px;
+    color: #cecece;
+    background-color: #141513;
+    padding: 12px 190px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.info .bu-st {
+    font-size: large;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    padding: 10px 27px;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+}
+
+.separation {
+    width: auto;
+    height: 0px;
+    border: solid 5px;
+    border-color: #f00 transparent transparent transparent;
+}
+
+.dbox {
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+}
+
+@media screen and (max-width:600px) {
+    .content {
+        padding-left: 45px;
+        margin-top: 160px;
+        margin-right: 10px;
+        width: auto;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: baseline;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .content {
+        margin-top: 77px;
+        font-size: x-large;
+    }
+
+    .content div:nth-child(3) {
+        font-size: small;
+        line-height: normal;
+    }
+    .info .email {
+       font-size: 12px;
+       padding: 10px 10px 10px 10px;
+    } 
+    .info .bu-st {
+        font-size: small;
+    }
+
+}
+
+.trend {
+    color: white;
+    margin-top: 10px;
+    padding-left: 150px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.region,
+.type {
+    color: white;
+    background-color: black;
+    padding: 2px 9px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 18px;
+    margin: 15px 0px;
+    margin-right: 10px;
+}
+
+.number .pic {
+    position: relative;
+    margin: 20px 20px;
+    display: flex;
+    transition: transfrom 2s ease-in;
+}
+.pic:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.pic img {
+    border-radius: 10px;
+}
+
+.num {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+    font-weight: bolder;
+    font-size: 100px;
+    position: absolute;
+    bottom: 0;
+    left: -17px;
+
+}
+
+.movies {
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    overflow: scroll auto;
+    margin-bottom: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.reasons >span {
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 150px;
+}
+.reasons .box{
+    background-image: linear-gradient(to bottom right, #182044, #210d16);
+    width: 290px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 22px;
+}
+.box img{
+    width: 90px;
+    margin-top: auto;
+    margin-left: auto;
+}
+.box span:nth-child(1){
+    font-weight: bold;
+    font-size: x-large;
+    padding: 15px 0px;
+}
+.box span:nth-child(2){
+    font-size:large;
+}
+.boxes{
+    display: flex;
+    gap: 30px;
+    padding-left: 150px;
+    margin-top: 20px;
+}
+.faq>span:first-child{
+    font-weight: bolder;
+    font-size: x-large;
+}
+.faq{
+    color: white;
+    font-size:larger;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-left: 150px;
+}
+.question{
+    border: 2px solid #2d2d2d;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top:10px;
+    width: 69vw;
+}
+.question:hover{
+    cursor: pointer;
+    background-color: #414141;
+}
+.faq .ready {
+    margin-top: 35px;
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.faq .email{
+    margin-bottom: 15px;
+    width: 55%;
+    font-size: large;
+    margin-right: 5px;
+}
+.faq .bu-st{
+    width: 15vw;
+}
+@media screen and (max-width:1020px){
+    .boxes {
+        flex-direction: column;
+    }
+    .reasons .box{
+        width: 85%;
+        height: auto;
+    }
+    .faq .info{
+        gap: 10px;
+    }
+    .faq .bu-st{
+        width: 56%;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .trend {
+        padding-left: 45px;
+    }
+    .reasons >span{
+        padding: 45px;
+    }
+    .boxes{
+        padding: 45px;
+    }
+    .faq {
+        margin: auto 45px;
+    }
+    .reasons >span {
+        font-size:21px;
+    }
+ 
+}
